@@ -1,0 +1,74 @@
+// A set of walkthrough screens in HTML/CSS/JS. A personal experiment with layering images, CSS3 transitions, & flexbox. 
+
+%button.open-walkthrough Start
+.walkthrough.show.reveal
+  .walkthrough-pagination
+    %a.dot.active
+    %a.dot
+    %a.dot
+    %a.dot
+    %a.dot
+  .walkthrough-body
+    %ul.screens.animate
+
+      %li.screen.active
+        .media.logo
+          %img.logo{src: "https://s3.amazonaws.com/jebbles-codepen/icon.png"}
+        %h3
+          방송규칙을 설명드리기전에
+        %p 이 웹사이트는 설아님을 위해 만든 웹 사이트 입니다
+
+      %li.screen
+        .media.books
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/book_icon_1.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/book_icon_2.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/book_icon_3.png"}
+        %h3
+          방송 규칙에는 이런것이 있어요
+          %br 1번,2번,3번
+        %p 무지성 뇌절 및 시비 절대 금지
+        %p 타스 언급 먼저 하기 전에 언급 금지
+        %p 시청자들간 친목 절대 금지
+
+      %li.screen
+        .media.bars
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/bar_icon_axis.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/bar_icon_3.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/bar_icon_2.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/bar_icon_1.png"}
+
+        %h3
+          방송 규칙에는 이런것이 있어요
+          %br 4번,5번
+        %p 종교,정치 등의 이슈 언급 금지입니다
+        %p 훈수,반말,눈나 등 예의 없는 행동들도 금지입니다
+
+      %li.screen
+        .media.files
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/file_icon_1.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/file_icon_2.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/file_icon_3.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/file_icon_4.png"}
+        %h3
+          방송 규칙에는 이런것이 있어요
+          %br 6번
+        %p 제발 스트리머와 기싸움 하려고 하지마세요 
+        %p 이 갈리면 mbti 안맞는거니 나가시면 됩니다
+
+      %li.screen
+        .media.comm
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/comm_icon_1.png"}
+          %img.icon{src: "https://s3.amazonaws.com/jebbles-codepen/comm_icon_2.png"}
+        %h3
+          방송규칙은 이렇게 6가지 있습니다
+          %br 
+        %p 이렇게 6가지 규칙만 잘 지켜주셔도 재밌는 방송을 볼 수 있으니 다들 지켜주시길 바랍니다. 그리고 잘 지켜주시는 시청자분들 항상 감사합니다!
+
+    %button.prev-screen
+      %i.icon-angle-left
+    %button.next-screen
+      %i.icon-angle-right
+
+  .walkthrough-footer
+    %button.button.next-screen Next
+    %button.button.finish.close{disabled: "true"} Finish
